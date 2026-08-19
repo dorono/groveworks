@@ -1,0 +1,30 @@
+@import './_tokens.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* utility */
+.container {
+  width: min(100% - 32px, 1200px);
+  margin: 0 auto;
+  padding: var(--space-lg) 16px;
+}
